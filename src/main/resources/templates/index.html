@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image</title>
+</head>
+<body>
+<h1>Upload Image</h1>
+
+<form th:action="@{/test/upload}" method="post" enctype="multipart/form-data">
+  <label for="file">Chọn một tệp hình ảnh:</label>
+  <input type="file" name="file" id="file" accept="image/*">
+  <br><br>
+  <button type="submit">Tải lên</button>
+</form>
+</body>
+</html>
